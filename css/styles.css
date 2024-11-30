@@ -1,0 +1,116 @@
+/***Roots***/
+:root {
+    /*Colors*/
+    --yellow-color: hsl(47, 88%, 63%);
+    --whtie-color: hsl(0, 0%, 100%);
+    --500-gray-color: hsl(0, 0%, 42%);
+    --950-gray-color: hsl(0, 0%, 7%);
+    /*End Colors*/
+    /*Fonts*/
+    --main-font-family: 'Figtree', 'Arial', sans-serif;
+    --11-font-size: .688rem;
+    --12-font-size: .75rem;
+    --14-font-size: .875rem;
+    --16-font-size: 1rem;
+    --20-font-size: 1.25rem;
+    --500-Font-Weight: 500;
+    --800-Font-Weight: 800;
+    /*End Fonts*/
+}
+/***End Roots***/
+/***Rests***/
+*,
+*::before,
+*::after {
+    box-sizing: 0;
+}
+/***End Rests***/
+/***HTML***/
+    html {
+        background-color: var(--yellow-color);
+        font-size: 16px;
+    }
+/***End HTML***/
+
+/***Fonts***/
+    @font-face {
+        font-family: "figtree-extrabold";
+        src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format("ttf");
+    }
+    @font-face {
+        font-family: "figtree-semibold";
+        src: url("../assets/fonts/static/Figtree-SemiBold.ttf") format("ttf");
+    }
+    @font-face {
+        font-family: "figtree-italic-variable-font-wght";
+        src: url("../assets/fonts/Figtree-Italic-VariableFont_wght.ttf") format("ttf");
+    }
+    @font-face {
+        font-family: "figtree-variable-font-wght";
+        src: url("../assets/fonts/Figtree-VariableFont_wght.ttf") format("ttf");
+    }
+/***EndFonts***/
+/***Body***/
+    body {
+        background-color: var(--whtie-color);
+        border-radius: 20px;
+        font-family: var(--main-font-family);
+        padding: 24px;
+        max-width: 327px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .illistration-article img, article, .attribution {
+        max-width: 100%;
+    }
+    .illistration-article img {
+        border-radius: 10px;
+    }
+    article {
+        width: 100%;
+        margin: 1.5rem 0;
+        font-size: var(--12-font-size);
+        color: var(--950-gray-color);
+    }
+    h2.category {
+        max-width: 4.563rem;
+        font-weight: var(--800-Font-Weight);
+        text-align: center;
+        padding: .25rem .75rem;
+        background-color: var(--yellow-color);
+        border-radius: 4px;
+    }
+    h3.publish-date {
+        font-weight: var(--500-Font-Weight);
+    }
+    h1.title {
+        font-size: var(--20-font-size);
+        font-weight: var(--800-Font-Weight);
+    }
+    p.description {
+        font-size: var(--14-font-size);
+        font-weight: var(--500-Font-Weight);
+        color: var(--500-gray-color);
+    }    
+    .author {
+        display: flex;
+        width: 8.065rem;
+        height: 2rem;
+        margin-top: 7%;
+    }
+    .author img {
+      padding-right: .75rem;
+    }
+    .author-name {
+        font-size: var(--14-font-size);
+        color: var(--950-gray-color);
+        font-weight: 950;
+        margin: auto 0;
+    }
+/***End Body***/
+/***Footer***/
+    .attribution { font-size: var(--11-font-size); text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+/***End Footer***/
